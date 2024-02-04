@@ -12,9 +12,15 @@ export default defineConfig({
 
   // Useful for theme customization
   theme: {
-    extend: {},
+    extend: {
+      tokens: {
+        colors: {
+          bg: { value: '#F9F9FB' },
+          bgSecondary: { value: '#FFF' }
+        }
+      }
+    }
   },
-
   // The output directory for your css system
   outdir: "styled-system",
 });
